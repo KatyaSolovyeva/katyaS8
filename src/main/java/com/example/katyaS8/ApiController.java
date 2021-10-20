@@ -39,7 +39,7 @@ public class ApiController {
     @DeleteMapping("themes")
     public void deleteThemes2() {
         int k=themes.size();
-        for(int n=1;n<k;n++)
+        for(int n=1;n<=k;n++)
         {
             themes.remove(n);
         }
@@ -54,7 +54,10 @@ public class ApiController {
     }
 //curl -X POST http://localhost:8080/themes -H 'Content-Type: text/plain' -d 'hello'
 
-    //
+    //curl -X DELETE http://localhost:8080/themes/2
+
+    //curl -X DELETE http://localhost:8080/themes
+
 }
 
 
